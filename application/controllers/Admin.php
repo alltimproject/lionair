@@ -47,7 +47,7 @@ class Admin extends CI_Controller{
         redirect('adm/dashboard');
 
       }else if($level == 'accounting'){
-        redirect('accounting/dashboard');
+        redirect('acc/dashboard');
       }else{
         redirect('admin');
       }
