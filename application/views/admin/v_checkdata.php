@@ -199,24 +199,24 @@ foreach ($checkdataid as $key) {
 
 
                   <?php foreach($getpenerbanganRefund->result() as $refunPener): ?>
-                  <input type="text" name="no_refund_penerbangan[]" value="<?= $refunPener->no_refund ?>"><br/>
-                  <input type="text" name="no_penerbangan[]" value="<?= $refunPener->no_penerbangan ?>"><br>
+                  <input type="hidden" name="no_refund_penerbangan[]" value="<?= $refunPener->no_refund ?>"><br/>
+                  <input type="hidden" name="no_penerbangan[]" value="<?= $refunPener->no_penerbangan ?>"><br>
 
 
                   <!-- not array -->
-                  <input type="text" name="no_pener" value="<?= $refunPener->no_penerbangan ?>"><br>
+                  <input type="hidden" name="no_pener" value="<?= $refunPener->no_penerbangan ?>"><br>
                   <?php endforeach; ?>
 
                   <?php foreach($gettiketRefund->result() as $tiket): ?>
-                  <input type="text" name="no_tiket[]" value="<?= $tiket->no_tiket ?>">
-                  <input type="text" name="nama_pessenger[]" value="<?= $tiket->nama_pessenger ?>">
-                  <input type="text" name="tgl_lahir[]" value="<?= $tiket->tgl_lahir ?>">
-                  <input type="text" name="tipe_pessenger[]" value="<?= $tiket->tipe_pessenger ?>">
-                  <input type="text" name="kd_booking_tiket[]" value="<?= $tiket->kd_booking ?>">
+                  <input type="hidden" name="no_tiket[]" value="<?= $tiket->no_tiket ?>">
+                  <input type="hidden" name="nama_pessenger[]" value="<?= $tiket->nama_pessenger ?>">
+                  <input type="hidden" name="tgl_lahir[]" value="<?= $tiket->tgl_lahir ?>">
+                  <input type="hidden" name="tipe_pessenger[]" value="<?= $tiket->tipe_pessenger ?>">
+                  <input type="hidden" name="kd_booking_tiket[]" value="<?= $tiket->kd_booking ?>">
                   <?php endforeach;  ?>
 
                   <input type="hidden" name="total" value="<?= $refund_total ?>">
-                  <input type="text" name="kd_booking" value="<?= $kd_booking ?>">
+                  <input type="hidden" name="kd_booking" value="<?= $kd_booking ?>">
                   <input type="hidden" name="no_refund" value="<?= $no_refund ?>">
                   <input type="hidden" name="namalengkap" value="<?= $nama_depan.' '.$nama_belakang ?>">
                   <input type="hidden" name="nama_belakang" value="<?= $nama_belakang ?>">
@@ -238,21 +238,21 @@ foreach ($checkdataid as $key) {
 
                   <!-- refun penerbangan -->
                   <?php foreach($getpenerbanganRefund->result() as $refunPener): ?>
-                  <input type="text" name="no_refund_penerbangan[]" value="<?= $refunPener->no_refund ?>"><br/>
-                  <input type="text" name="no_penerbangan[]" value="<?= $refunPener->no_penerbangan ?>"><br>
+                  <input type="hidden" name="no_refund_penerbangan[]" value="<?= $refunPener->no_refund ?>"><br/>
+                  <input type="hidden" name="no_penerbangan[]" value="<?= $refunPener->no_penerbangan ?>"><br>
                   <?php endforeach ?>
 
                   <!-- not penerbangan -->
                   <?php foreach($getNotpenerbangan->result() as $notPenerbangan): ?>
-                    <input type="text" name="notPenerbangan" value="<?= $notPenerbangan->no_penerbangan ?>">
+                    <input type="hidden" name="notPenerbangan" value="<?= $notPenerbangan->no_penerbangan ?>">
                   <?php endforeach; ?>
                   <!-- data tiket refund -->
                   <?php foreach($gettiketRefund->result() as $tiket): ?>
-                  <input type="text" name="no_tiket[]" value="<?= $tiket->no_tiket ?>">
-                  <input type="text" name="nama_pessenger[]" value="<?= $tiket->nama_pessenger ?>">
-                  <input type="text" name="tgl_lahir[]" value="<?= $tiket->tgl_lahir ?>">
-                  <input type="text" name="tipe_pessenger[]" value="<?= $tiket->tipe_pessenger ?>">
-                  <input type="text" name="kd_booking_tiket[]" value="<?= $tiket->kd_booking ?>">
+                  <input type="hidden" name="no_tiket[]" value="<?= $tiket->no_tiket ?>">
+                  <input type="hidden" name="nama_pessenger[]" value="<?= $tiket->nama_pessenger ?>">
+                  <input type="hidden" name="tgl_lahir[]" value="<?= $tiket->tgl_lahir ?>">
+                  <input type="hidden" name="tipe_pessenger[]" value="<?= $tiket->tipe_pessenger ?>">
+                  <input type="hidden" name="kd_booking_tiket[]" value="<?= $tiket->kd_booking ?>">
                   <?php endforeach;  ?>
 
                   <!-- acakhuruf -->

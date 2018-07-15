@@ -339,14 +339,14 @@ class M_refund extends CI_Model{
     $tgl_lahir      = $this->input->post('tgl_lahir');
     $tipe_pessenger = $this->input->post('tipe_pessenger');
     $kd_booking     = $this->input->post('kd_booking_tiket');
-
-    echo '<pre>';
-    echo print_r($no_tiket);
-    echo print_r($nama_pessenger);
-    echo print_r($tgl_lahir);
-    echo print_r($tipe_pessenger);
-    echo print_r($kd_booking);
-    echo '</pre>';
+    //
+    // echo '<pre>';
+    // echo print_r($no_tiket);
+    // echo print_r($nama_pessenger);
+    // echo print_r($tgl_lahir);
+    // echo print_r($tipe_pessenger);
+    // echo print_r($kd_booking);
+    // echo '</pre>';
 
     $count = count($no_tiket);
     $sql   = "INSERT INTO tb_pessenger (no_tiket, nama_pessenger, tipe_pessenger, tgl_lahir, kd_booking) VALUES ";
@@ -356,12 +356,8 @@ class M_refund extends CI_Model{
       $sql .= ",";
     }
     $sql  = rtrim($sql, ",");
-    $insert = $this->db->query($sql);
-    if($insert){
-      echo "berhasil";
-    }else{
-      echo "gagal";
-    }
+    $this->db->query($sql);
+
   }
 
 

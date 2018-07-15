@@ -129,7 +129,7 @@
                     <tr>
                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
                         <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi <b><?= $namalengkap ?></b>,</p>
-                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Permintaan refund <b><?= $no_refund ?></b> , berhasil di verifikasi. Berikut kami lampirkan data tiket </p>
+                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Permintaan refund <b><?= $no_refund ?></b> , berhasil di verifikasi. Kode Booking baru anda <?= $newKodebooking  ?> . Berikut kami lampirkan data tiket </p>
 
                         <table id="customers">
                           <tr>
@@ -170,6 +170,7 @@
                         <div class="content-total" style="padding-top:10px; margin-left:50px;">
                           <p><b>Total Pengembalian : <?= $total_refund ?> </b></p>
                         </div>
+
                         <a href="<?= $url ?>">cek tiket</a>
                       </td>
                     </tr>
